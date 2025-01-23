@@ -63,9 +63,11 @@ PLEASE DONT CHANGE IT UNLESS YOU KNOW WHAT YOU DOING!!
     AND ADD A O2 AUTHENTICATION WITH THE WORKSPACE SHA CODE
     THE VALUE HERE IS THE REGISTERED API KEY FROM THE API CONSOLE
     -->
+
+         <!-- ADD YOUR OWN GOOGLE ID HERE! -->
     <meta-data
         android:name="com.google.android.apps.drive.APP_ID"
-        android:value="AIzaSyDE_nLfZSenXf4nab67CtidzXhSLmyLyi0" />
+        android:value="" />
 
     </application>
 </manifest>
