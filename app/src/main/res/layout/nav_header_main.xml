@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView_Nav"
+        android:layout_width="250dp"
+        android:layout_height="146dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/nav_header_desc"
+        app:srcCompat="@drawable/citycen" />
+
+    <TextView
+        android:id="@+id/NavHeader_Text0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="3sp"
+        android:paddingLeft="3sp"
+        android:paddingRight="3sp"
+        android:paddingBottom="3sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/NavHeader_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="3sp"
+        android:paddingLeft="3sp"
+        android:paddingRight="3sp"
+        android:paddingBottom="3sp"
+        android:text="@string/nav_header_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/NavHeader_Text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="3sp"
+        android:paddingLeft="3sp"
+        android:paddingRight="3sp"
+        android:paddingBottom="3sp"
+        android:text="@string/nav_header_title2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtViewRadioG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+
+        android:textAlignment="center">
+
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/rdGroup_dialog_Custom_YesNo_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="1"
+            android:text="Yes"
+            android:textSize="@dimen/textSize" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="3"
+            android:text="Yes,later"
+            android:textSize="@dimen/textSize" />
+
+        <RadioButton
+            android:id="@+id/rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="2"
+            android:text="No"
+            android:textSize="@dimen/textSize" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="99"
+            android:text="Don't know"
+            android:textSize="@dimen/textSize" />
+    </RadioGroup>
+
+</LinearLayout>

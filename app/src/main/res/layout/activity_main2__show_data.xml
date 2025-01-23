@@ -1,0 +1,2803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout_Show2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity_ShowData">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_Submit_Activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit_second_act"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|right"
+        app:backgroundTint="@color/colorPrimaryDark"
+       />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="@android:color/white">
+
+        <AutoCompleteTextView
+            android:id="@+id/AutoComplete_txtViewHCN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:hint="Enter Household Control Number"
+            android:imeOptions="flagNoFullscreen"
+            android:maxLength="6"
+            android:inputType="number"
+            android:textSize="@dimen/textSize">
+
+        </AutoCompleteTextView>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ScrollView
+        android:id="@+id/Main2Activity_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="5sp"
+                android:layout_marginTop="10sp"
+                android:background="@android:color/white">
+
+                <EditText
+                    android:id="@+id/txtBox_RespondentName_Show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name of Respondent"
+                    android:imeOptions="flagNoFullscreen"
+                    android:inputType="textAutoComplete" />
+                <requestFocus />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <!-- A-F QUESTIONS -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30sp"
+                >
+
+                <TableLayout
+                    android:id="@+id/tblACQuestion_layout_Main2Activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="8"
+                            android:background="@drawable/border"
+                            android:text="FOR ALL PERSONS IN THE HOUSEHOLD"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="351dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:text="FOR PERSON 10 YEARS OLD AND ABOVE"
+                            android:textAlignment="center"
+                            android:layout_span="2"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            android:layout_span="2"
+                            android:text="FOR PERSON 3 TO 24 YEARS OLD" />
+
+                        <TextView
+                            android:layout_width="334dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:text="FOR PERSON 15 YEARS OLD AND ABOVE"
+                            android:textAlignment="center"
+                            android:layout_span="2"
+                            android:textSize="30sp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:background="@drawable/border"
+                            android:text="MEMBERSHIP IN COOPERATIVE (FOR PERSONS)"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="5"
+                            android:background="@drawable/border"
+                            android:text="FOR HOUSEHOLD MEMBERS 15 YEARS OLD AND ABOVE"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="3"
+                            android:background="@drawable/border"
+                            android:text="FOR ALL PERSONS IN THE HOUSEHOLD"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:layout_span="14"
+                            android:text="FOR INFANTS 0-11 MONTHS"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:text="FOR 6-11 MONTHS"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:text="FOR 6 MONTHS TO 6 YEARS OLD"
+                            android:textAlignment="center"
+                            android:layout_span="2"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:text="FOR 1 - 7 YEARS OLD"
+
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:text="FOR ALL PERSON 10 - 49 YEARS OLD"
+                            android:layout_span="2"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:layout_span="7"
+                            android:text="FOR ALL WOMEN 10 - 49 YEARS OLD"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tblRow_AFQuestion_Activity2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- 1 -->
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="Lastname "
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 2 -->
+                        <TextView
+                            android:layout_width="198dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text=" Firstname "
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 3 -->
+                        <TextView
+                            android:layout_width="167dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:text=" Middlename "
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 4 -->
+                        <TextView
+                            android:layout_width="167dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:text="Sex"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 5 -->
+                        <TextView
+                            android:id="@+id/txtViewC1"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="C1. Is ____ born in General Santos City?
+(Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 6 -->
+                        <TextView
+                            android:id="@+id/txtViewC1.a"
+                            android:layout_width="223dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="C2.  Is ___'s birth was registered with the civil registry?
+(Enter code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 7 -->
+                        <TextView
+                            android:id="@+id/txtViewC1.b"
+                            android:layout_width="251dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="C2.a.  What was the reason why ___'s birth was not registered with the civil registry?
+(Enter code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 8 -->
+                        <TextView
+                            android:layout_width="192dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="C3. How old is ___ as of his/her last birthday"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 9 -->
+                        <TextView
+                            android:id="@+id/txtViewC4"
+                            android:layout_width="228dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="C4. If married, what is the type of marriage of ___?
+  (Enter code) "
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 10 -->
+                        <TextView
+                            android:id="@+id/txtViewC5"
+                            android:layout_width="305dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="C5. If 3 years ago ___ resides outside General Santos City, What is/are your reasons/s of migrating to General Santos City and as a place of destination?
+ (Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 11 -->
+                        <TextView
+                            android:id="@+id/txtViewD6"
+                            android:layout_width="227dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="D6. What is the name of the school where ___is currently enrolled in?
+  (Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 12 -->
+                        <TextView
+                            android:id="@+id/txtViewD7"
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="D7. What is the usual mode of transport used by ___ in going to school?
+  (Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 13 -->
+                        <TextView
+                            android:id="@+id/txtViewE9"
+                            android:layout_width="299dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="E8. If __was employed or in business related to fishing, what type of fishing does ___ do?
+(Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 14 -->
+                        <TextView
+                            android:id="@+id/txtViewE10"
+                            android:layout_width="245dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="E9. What is the usual mode of transport used by ___ in going to work
+(Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 15 -->
+                        <TextView
+                            android:id="@+id/txtViewE11_A"
+                            android:layout_width="204dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="E10. Is ___ a member of a cooperative?
+(Enter the code
+)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!--16 -->
+                        <TextView
+                            android:id="@+id/txtViewE11_B"
+                            android:layout_width="233dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="E10.a. If NO, is ___ interested to be a member of a Cooperative?
+(Enter the code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+
+                        <!-- 17 -->
+                        <TextView
+                            android:id="@+id/txtViewE13"
+                            android:layout_width="226dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="E11. Did __ avail of any credit service/facility in the past month?
+(Enter code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+
+                        <!-- 18 -->
+                        <TextView
+                            android:id="@+id/txtViewE14"
+                            android:layout_width="236dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="E12. Do you want to avail livelihood training?
+(Enter code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 19 -->
+                        <TextView
+                            android:id="@+id/txtViewE15"
+                            android:layout_width="243dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="E13. Did __ avail any financing programs in the past 6 months?
+(Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 20 -->
+                        <TextView
+                            android:id="@+id/txtViewE15-A"
+                            android:layout_width="154dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="E13.a. What amount did __ availed? "
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!--21 -->
+                        <TextView
+                            android:layout_width="260dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="E14. Is there a presence of business activity in the residence?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+
+                        <!-- 22 -->
+                        <TextView
+                            android:id="@+id/txtViewE17"
+                            android:layout_width="241dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F15. Is __ coughing for two weeks or more prior to this interview?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 23 -->
+                        <TextView
+                            android:id="@+id/txtViewE17.1"
+                            android:layout_width="223dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F15.a.  Has __ been diagnosed of TB?
+(Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 24 -->
+                        <TextView
+                            android:id="@+id/txtViewE18"
+                            android:layout_width="306dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F16. If __ visited any health facility, what is usual mode of transport of transport used by __ in going to the health facility? "
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 25 -->
+                        <TextView
+                            android:layout_width="281dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17. Did the mother had prenatal care before __ was delivered?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 26 -->
+                        <TextView
+                            android:id="@+id/txtViewE19-A"
+                            android:layout_width="132dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.a.  Where was ___ delivered?
+(Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 27 -->
+                        <TextView
+                            android:id="@+id/txtViewE19-B"
+                            android:layout_width="183dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.b.  Who attended in the delivery of __?
+(Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 28 -->
+                        <TextView
+                            android:layout_width="235dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.c.  Did __ undergo newborn screening?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 29 -->
+                        <TextView
+                            android:id="@+id/txtViewE19-D"
+                            android:layout_width="190dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.d.  Do you have a card where __'s vaccination are written down?
+(Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!--30 -->
+                        <TextView
+                            android:layout_width="187dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.E1.  Is __ received BCG vaccination?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 31 -->
+                        <TextView
+                            android:layout_width="191dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.E2.  Is __ received Penta1 vaccination?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 32 -->
+                        <TextView
+                            android:layout_width="191dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.E3. Is __ received Penta2 vaccination?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 33 -->
+                        <TextView
+                            android:layout_width="191dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.E4. Is __ received Penta3 vaccination?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 34 -->
+                        <TextView
+                            android:layout_width="191dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.E5.  Is __ received OPV1 vaccination?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 35 -->
+                        <TextView
+                            android:layout_width="191dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.E6.  Is __ received OPV2 vaccination?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 36 -->
+                        <TextView
+                            android:layout_width="191dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.E7.  Is __ received OPV3 vaccination?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+
+                        <!-- 37 -->
+                        <TextView
+                            android:layout_width="216dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.E8.  Is __ received HepaB1 vaccination?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+
+                        <!-- 38 -->
+                        <TextView
+                            android:layout_width="204dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.E9.  Is __ received Measles vaccination?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+
+                        <!-- 39 -->
+                        <TextView
+                            android:layout_width="216dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F17.f.  Was __ exclusively breastfed?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 40 -->
+                        <TextView
+                            android:layout_width="216dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F18.  Is __ currently sick with measles?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 41 -->
+                        <TextView
+                            android:layout_width="377dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F19.  Was __ given Vitamin A supplementation 6 months prior to interview?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 42-->
+                        <TextView
+                            android:layout_width="377dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F20. Did __ have dental check-up in the past 6 months?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+
+                        <!-- 43 -->
+                        <TextView
+                            android:id="@+id/txtViewF23"
+                            android:layout_width="377dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F21.  Is __ currently using a method to delay or avoid pregnancy?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 44-->
+                        <TextView
+                            android:id="@+id/txtViewF23-B"
+                            android:layout_width="216dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F21.a.  Where did __ recently obtain the service or commodity?
+(Enter Code)"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 45 -->
+                        <TextView
+                            android:id="@+id/txtViewF24"
+                            android:layout_width="423dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F22.  If __ is currently pregnant,did __ see anyone for prenatal care for this pregnancy?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+
+                        <!-- 46 -->
+                        <TextView
+                            android:layout_width="377dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F22.a.  During this pregnancy, was __ given Tetanus Toxoid/Tetanus Diptheria vaccine?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 47 -->
+                        <TextView
+                            android:layout_width="377dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F22.b.  As of today, how many Tetanus Toxoid/Tetanus Diptheria injections did __ received?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 48 -->
+                        <TextView
+                            android:layout_width="216dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F23.  How many living children does? __ have?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <!-- 49 -->
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:paddingLeft="5sp"
+                            android:text="F24.  Does __ want additional children?"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                >
+
+                <Button
+                    android:id="@+id/btnAddRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#FFFFFF"
+                    android:text="Add Row" />
+
+                <Button
+                    android:id="@+id/btnRemoveRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="122dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#FFFFFF"
+                    android:text="Delete Row" />
+            </RelativeLayout>
+
+            <!-- G-O -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/white"
+                >
+
+                <!-- G. HOUSING AND HOUSEHOLD CHARACTERISTICS -->
+                <!-- G25 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="G. HOUSING AND HOUSEHOLD CHARACTERISTICS"
+                    android:textSize="@dimen/textSizeBig" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="G25. Observed structural condition of main dwelling unit"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdGroupG_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdBoxG25_MajorRepair_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Need for major repairs"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdBoxG25_Dilapidated_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Seriously dilapidated"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/rdBoxG25_SoundStructure_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Sound Structure"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+
+                <!-- G26 -->
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editTextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtBoxG26Year_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:maxLength="4"
+                        android:hint="G26. Year Constructed"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!-- H. FOOD SECURITY -->
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:text="H. FOOD SECURITY"
+                    android:textSize="18dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editTextLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/txtBoxH27_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:maxLength="1"
+                        android:hint="H27. How many times does the household eat in a day?"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- H28 -->
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="H28. A household usually serves a variety of food, in your case, how many days were the following foods served in a meal eaten by the household in the past 7 days"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editTextLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <EditText
+                        android:id="@+id/txtBoxH28_Meat_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:ems="8"
+                        android:maxLength="2"
+                        android:hint="Meat?"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editTextLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <EditText
+                        android:id="@+id/txtBoxH28_Seafoods_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Seafoods?"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editTextLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtBoxH28_Processed_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:maxLength="2"
+                        android:hint="Processed Foods?"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editTextLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtBoxH28_Fruits_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:maxLength="2"
+                        android:hint="Fruits?"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editTextLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtBoxH28_Vege_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Vegetables?"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+                <!-- H28 -->
+
+                <!-- H29 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="H29.When you buy a kilo of rice, for how many day/s is it usually good for? "
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_H29_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdboxH29_A_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Less than a day"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxH29_B_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="One day"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxH29_C_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Two days"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxH29_D_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Three days"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxH29_E_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Four days"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/editTextLayout9"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxH29_Others_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="8dp"
+                        android:ems="8"
+                        android:hint="Others, Specify?"
+                        android:imeOptions="flagNoFullscreen" />
+                </android.support.design.widget.TextInputLayout>
+                <!-- H. FOOD SECURITY -->
+
+                <!-- I. BACKYARD GARDEN -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="I. BACKYARD GARDEN"
+                    android:textSize="@dimen/textSizeBig" />
+
+                <TextView
+                    android:id="@+id/r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="I30. Does your household or any members of your household plant vegetables in the vicinity of the house?"
+                    android:textSize="@dimen/textSize" />
+
+                <!-- I30-->
+                <RadioGroup
+                    android:id="@+id/rdG_L30_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdboxL30_A_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxL30_B_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+
+                <!-- I31 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="15dp"
+                    android:text="I31. Does your household or any members of your household plant tree in the vicinity of the house?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_L31_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdboxL31_A_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxL31_B_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+
+                <!-- I. BACKYARD GARDEN -->
+
+                <!-- J. OWNERSHIP OF HOUSE HOLD ASSET -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="J. OWNERSHIP OF HOUSEHOLD ASSETS"
+                    android:textSize="@dimen/textSizeBig" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="J32. Does your household or any members of your household own fishpond?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_J32_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdboxJ32_A_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxJ32_B_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="If Yes, how many?"
+                    android:textSize="14dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxJ32_Prawn_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Prawn"
+                        android:maxLength="3"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxJ32_Hito_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Hito"
+                        android:maxLength="3"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxJ32_Pangasius_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:maxLength="3"
+                        android:hint="Pangasius"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxJ32_Bangus_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:maxLength="3"
+                        android:hint="Bangus"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxJ32_Tilapia_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Tilapia"
+                        android:maxLength="3"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxJ32_Others_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Others, Specify"
+                        android:imeOptions="flagNoFullscreen" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- J. OWNERSHIP OF HOUSE HOLD ASSET -->
+
+                <!-- K. OWNERSHIP AND IMMUNIZATION OF DOGS AND CATS -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="K. OWNERSHIP AND IMMUNIZATION OF DOGS AND CATS "
+                    android:textSize="@dimen/textSizeBig" />
+
+                <TextView
+                    android:layout_width="558dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="K33. Does your household or any members of your household own dogs/cats"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_K33_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdboxK33_YES_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxK33_NO_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="If yes,"
+                    android:textSize="@dimen/textSize" />
+
+                <!-- K33A-DOG -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxK33A_Dog_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Number of Dogs"
+                        android:maxLength="3"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- K33A-CAT -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxK33A_Cat_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:maxLength="3"
+                        android:hint="Number of Cats"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!-- K33-B -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="13dp"
+                    android:text="K33-B. How does the household took care of dogs/cats"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_K33B_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdboxK33B_Cage_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="By Cage"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxK33B_Tying_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="By tying"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxK33B_Free_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Free"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+                <!-- K33-B -->
+
+                <!-- K33-C -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="K33-C. Are your dogs immunized against rabies starting three (3) months old and yearly?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_K33_C_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdboxK33C_Yes_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxK33C_But_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes,but not all"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxK33C_No_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+
+                <!-- K33-C -->
+
+                <!-- L. CLIMATE CHANGE AND DISASTER RISK MANAGEMENT -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="L. CLIMATE CHANGE AND DISASTER RISK MANAGEMENT "
+                    android:textSize="@dimen/textSizeBig" />
+
+                <!-- L34 -->
+                <TextView
+                    android:layout_width="617dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="L34. Is there a member in the household  knowledgeable on disaster preparedness?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdGroup_L34_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdboxL34_Yes_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxL34_No_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+                <!-- L34 -->
+
+                <!-- L34-A -->
+                <TextView
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="L34-A. If yes?"
+                    android:textSize="@dimen/textSize" />
+
+
+                <CheckBox
+                    android:id="@+id/chkL34A_School_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="School"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkL34A_GovAgencies_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Government Agencies"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkL34A_NonGov_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Non-Government Organization"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxL34A_Other_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Other, specify"
+                        android:imeOptions="flagNoFullscreen" />
+
+                </android.support.design.widget.TextInputLayout>
+                <!-- L34-A -->
+
+                <!-- L34-B -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="L34.B What type of training was _____ undergone regarding disaster preparedness?"
+                    android:textSize="@dimen/textSize" />
+
+
+                <CheckBox
+                    android:id="@+id/chkboxL34_BRCRP_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="CBDRRM or RCRP"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxL34B_FirstAid_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="First Aid"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxL34B_BLS_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="BLS/CPR"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxL34B_FireFight_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Fire Fighting"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxL34B_SearchRescue_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Search and Rescue"
+                    android:textSize="@dimen/textSize" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxL34B_Others_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Other, specify"
+                        android:imeOptions="flagNoFullscreen" />
+                </android.support.design.widget.TextInputLayout>
+                <!-- L34-B -->
+
+                <!-- L35 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="L35. Is there a disaster alert system currently practised in your community or Barangay?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_L35_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rdboxL35_Yes_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxL35_No_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No"
+                        android:textSize="14dp" />
+                </RadioGroup>
+                <!-- L35 -->
+
+                <!-- L35-A -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="L35-A. If yes, how is information disseminated?(Check as many)"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkL35A_Radio_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Radio"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkL35A_TV_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Television"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkL35A_Publication_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Publication"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkL35A_SMS_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="SMS"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkL35A_Siren_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Siren"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkL35A_Internet_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Internet"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxL35A_Others_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Other, specify"
+                        android:imeOptions="flagNoFullscreen" />
+                </android.support.design.widget.TextInputLayout>
+                <!-- L35-A -->
+
+                <!-- M. GOVERNMENT FACILITIES -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="M. GOVERNMENT FACILITIES "
+                    android:textSize="@dimen/textSizeBig" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="M36. What government infrastructure have you used?(Check as many)"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Roads_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Roads"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Drainage_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Drainage"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_School_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="School Buildings"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Health_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Health Facilities"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_DayCare_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Day Care Centers"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Water_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Water System Facilities"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Multi_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Multi-purpose Building"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Flood_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Flood Control Infrastructure"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Government_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Government Warehouse"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Bridges_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Bridges"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_StreetLights_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Street Lights"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Solar_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Solar Drier"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Covered_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Covered Court"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM36_Basketball_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Basketball Court"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxM36A_Others_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Other, specify"
+                        android:imeOptions="flagNoFullscreen" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- M37 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="M37.  What government infrastructure facilities do you want in your barangay in the next three (3) years? (Check only 3 boxes)"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Roads_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Roads"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Drainage_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Drainage"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_School_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="School Buildings"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Health_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Health Facilities"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_DayCare_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Day Care Centers"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Water_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Water System Facilities"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Multi_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Multi-purpose Building"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Flood_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Flood Control Infrastructure"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Government_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Government Warehouse"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Bridges_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Bridges"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_StreetLights_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Street Lights"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Solar_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Solar Drier"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Covered_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Covered Court"
+                    android:textSize="@dimen/textSize" />
+
+                <CheckBox
+                    android:id="@+id/chkboxM37_Basketball_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Basketball Court"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxM37_Others_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Other, specify"
+                        android:imeOptions="flagNoFullscreen" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!-- M40. GOVERNMENT FACILITIES -->
+
+
+                <!-- N. HUMAN RESOURCE MANAGEMENT IN THE LOCAL GOVERNMENT UNIT -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="N. HUMAN RESOURCE MANAGEMENT IN THE LOCAL GOVERNMENT UNIT "
+                    android:textSize="@dimen/textSizeBig" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="N38. Have you experienced having transaction/s with our government unit?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_N38_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38_Yes_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38_No_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="N38.A. If YES,how often?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_N38_A_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38A_Daily_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Daily"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38A_Weekly_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Weekly"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38A_Monthly_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Monthly"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38A_Quarterly_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Quarterly"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38A_Annually_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Annually"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+                <!-- N38 -->
+
+                <!-- N38-B -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="N38.B. Are you satisfied with the services of our employees?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_N38_B_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38B_Yes_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38B_No_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+                <!-- N38-B -->
+
+                <!-- N38-C -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="N38.C. Were you served within time expected? Or did it take so long for you to be served?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_N38_C_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38C_Early_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Earlier"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38C_Expected_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="As expected"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38C_Beyond_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Late"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+                <!-- N38-C -->
+
+                <!-- N38-D -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="N38-D. Do you think that LGU employees are competent enough to do their jobs?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_N38_D_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38D_All_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="All"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38D_Majority_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Majority"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38D_OnlyFew_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Only a few"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38D_None_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="None at all"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+                <!-- N38-D -->
+
+                <!-- N38-E -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="N38.E. In what aspect are you not satisfied or where the employees need more improvement?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_N38_E_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38E_Customer_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Customer Service"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38E_Behavioral_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Behavioral"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38E_Time_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Time"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38E_Mastery_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Mastery of Job"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxN38E_Others_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Other, specify"
+                        android:imeOptions="flagNoFullscreen" />
+                </android.support.design.widget.TextInputLayout>
+                <!-- N38-E -->
+
+
+                <!-- N38F -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="N38.F. In your opinion,does the government have enough personnel to attend to the needs of the public?"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rdG_N38_F_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38F_Yes_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Yes"
+                        android:textSize="@dimen/textSize" />
+
+                    <RadioButton
+                        android:id="@+id/rdboxN38F_No_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No"
+                        android:textSize="@dimen/textSize" />
+                </RadioGroup>
+                <!-- N38F -->
+
+
+                <!-- O. PRIORITY CONCERNS -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="O. PRIORITY CONCERNS "
+                    android:textSize="@dimen/textSizeBig" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:text="O39. Prioritize the concerns listed below. Put numbers 1 to 10 before each concern according to your priority. (1 as top priority,10 as the least)"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxO39_Education_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Education"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxO39_Peace_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Peace and Order"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxO39_Health_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="8"
+                        android:hint="Health Services"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxO39_Labor_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Labor and Employment"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxO39_Economic_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Economic Services/Development"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxO39_Transport_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Transportation"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxO39_House_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Housing and Community Development"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxO39_Social_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Social Welfare Services"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxO39_Infrastructure_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="Infrastructure"
+                        android:maxLength="2"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:id="@+id/txtboxO39_Environment_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:maxLength="2"
+                        android:hint="Environment"
+                        android:imeOptions="flagNoFullscreen"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+                <!-- O -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

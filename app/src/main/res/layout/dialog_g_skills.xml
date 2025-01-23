@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="SKILLS"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="10sp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rdGroup_dialog_G_Skills"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RadioButton
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="None"
+                    android:hint="0"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Agriculture"
+                    android:hint="4081"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Automotive"
+                    android:hint="40716"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Beauty and Wellnes"
+                    android:textSize="@dimen/textSize"
+                    android:hint="41012" />
+
+                <RadioButton
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Building and Construction"
+                    android:textSize="@dimen/textSize"
+                    android:hint="40732" />
+
+                <RadioButton
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Business and Finance"
+                    android:textSize="@dimen/textSize"
+                    android:hint="404"/>
+
+                <RadioButton
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Electronics"
+                    android:textSize="@dimen/textSize"
+                    android:hint="40714" />
+
+                <RadioButton
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Food"
+                    android:textSize="@dimen/textSize"
+                    android:hint="4072" />
+
+                <RadioButton
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Health"
+                    android:hint="409"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Housekeeping"
+                    android:hint="41011"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Information, Communication and Digital Media"
+                    android:hint="406"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Transportation Services"
+                    android:hint="4104"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tour Guilding Services"
+                    android:hint="41015"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Don't know"
+                    android:hint="99"
+                    android:textSize="@dimen/textSize"
+                    />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

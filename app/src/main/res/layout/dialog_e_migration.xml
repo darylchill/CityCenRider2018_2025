@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="MIGRATION"
+        android:textAlignment="center">
+
+    </TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="10sp"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/rdGroup_dialog_E_Migration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/chkE_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:textAlignment="gravity"
+                    android:text="Economic (moving to find work or follow a particular career path)"
+                    android:hint="3"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/chkE_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="gravity"
+                    android:text="Social (moving somewhere for a better quality of life or to be closer to family or friends or education"
+                    android:hint="4"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/chkE_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="gravity"
+                    android:text="Political (moving to escape political persecution or war"
+                    android:hint="5"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/chkE_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="gravity"
+                    android:text="Environmental (causes of migration include natural disasters such as flooding)"
+                    android:hint="6"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/chkE_97"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="gravity"
+                    android:text="Not Applicable"
+                    android:hint="97"
+                    android:textSize="@dimen/textSize"
+                    />
+                <RadioButton
+                    android:id="@+id/chkE99"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="gravity"
+                    android:text="Don't know"
+                    android:hint="99"
+                    android:textSize="@dimen/textSize"
+                    />
+
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

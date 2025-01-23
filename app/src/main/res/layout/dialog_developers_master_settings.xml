@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/master_Setting_CoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="WELCOME LAZER"
+        android:textAlignment="center">
+
+    </TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Delete Submitted HCN data!  "
+                android:textSize="20sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8sp"
+                android:layout_marginTop="15dp">
+            <EditText
+                android:id="@+id/MasterSettings_txtHCN_DELETE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="15sp"
+                android:hint="Enter HCN to Delete"
+                android:imeOptions="flagNoFullscreen"
+                android:inputType="text"
+                android:textSize="@dimen/textSize">
+
+                <requestFocus />
+            </EditText>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/MasterSettings_btn_HCN_DELETE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DELETE" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8sp"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/MasterSettings_txt_CHANGE_SUPERVISOR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="15sp"
+                    android:hint="Enter Field Interviewer New Supervisor Code"
+                    android:textSize="@dimen/textSize" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/MasterSettings_btn_NEW_SUPERVISOR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15sp"
+                android:text="Enter New Supervisor" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

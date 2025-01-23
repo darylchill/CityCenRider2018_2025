@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BARANGAY LIST"
+        android:textAlignment="center"
+        android:textSize="25sp">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="10sp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rdGroup_dialog_Barangays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Apopong"
+                    android:hint="126303029"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Baluan"
+                    android:hint="126303003"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Batomelong"
+                    android:hint="126303032"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Buayan"
+                    android:hint="126303004"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Bula"
+                    android:hint="126303005"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Calumpang"
+                    android:hint="126303033"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="126303034"
+                    android:text="City Heights"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Conel"
+                    android:hint="126303006"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Dadiangas East"
+                    android:hint="126303007"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Dadiangas North"
+                    android:hint="126303035"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Dadiangas South"
+                    android:hint="126303036"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Dadiangas West"
+                    android:hint="126303037"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Fatima"
+                    android:hint="126303038"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Katangawan"
+                    android:hint="126303009"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Labangal"
+                    android:hint="126303012"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Lagao"
+                    android:hint="126303011"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Ligaya"
+                    android:hint="126303015"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Mabuhay"
+                    android:hint="126303016"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="San Isidro"
+                    android:hint="126303023"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Olympog"
+                    android:hint="126303039"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="San Jose"
+                    android:hint="126303024"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Siguel"
+                    android:hint="126303030"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Sinawal"
+                    android:hint="126303026"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tambler"
+                    android:hint="126303027"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tinagacan"
+                    android:hint="126303028"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Upper Labay"
+                    android:hint="126303031"
+                    android:textSize="@dimen/textSize" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- PERMISSION WE NEEDED -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/citycen"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CityCenRider2018"
+        tools:targetApi="31" >
+
+    <!-- HERE IS WE CAN SEE THE SETTINGS OF OUR ACTIVITIES -->
+    <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="userPortrait"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:windowSoftInputMode="adjustResize"
+        tools:ignore="DiscouragedApi,LockedOrientationActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".MainLoginActivity"
+        android:screenOrientation="userPortrait"
+        android:windowSoftInputMode="adjustResize" />
+    <activity
+        android:name=".Main2Activity_ShowData"
+        android:screenOrientation="userPortrait"
+        android:windowSoftInputMode="adjustResize" />
+    <activity
+        android:name=".Main2Activity_ShowUpload"
+        android:screenOrientation="userPortrait"
+        android:windowSoftInputMode="adjustResize" />
+    <activity
+        android:name=".Main4Activity_Manual"
+        android:screenOrientation="userPortrait"
+        android:windowSoftInputMode="adjustResize" />
+    <activity
+        android:name=".Main5Activity_CodeList"
+        android:screenOrientation="userPortrait"
+        android:windowSoftInputMode="adjustResize" />
+    <!--
+PLEASE DONT CHANGE IT UNLESS YOU KNOW WHAT YOU DOING!!
+    HERE IS THE API ID FOR UPLOADING TO DRIVE
+    REMEMBER THAT IN ORDER TO WORK
+    YOU NEED TO ADD THE SHA CODE OF THE WORKSPACE (COMPUTER) TO THE API CONSOLE
+    AND ADD A O2 AUTHENTICATION WITH THE WORKSPACE SHA CODE
+    THE VALUE HERE IS THE REGISTERED API KEY FROM THE API CONSOLE
+    -->
+    <meta-data
+        android:name="com.google.android.apps.drive.APP_ID"
+        android:value="AIzaSyDE_nLfZSenXf4nab67CtidzXhSLmyLyi0" />
+
+    </application>
+</manifest>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="PLACE OF BIRTH"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="10sp">
+
+
+            <RadioGroup
+                android:id="@+id/rdGroup_dialogcustom_B_PlaceofBirth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="1"
+                    android:text="Yes (If born in General Santos City)"
+                    android:textSize="@dimen/textSize"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="C1.a  If No, please specify:"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="010000000"
+                    android:text="Ilocos Region"
+                    android:textSize="@dimen/textSize"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="020000000"
+                    android:text="Cagayan Valley"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="030000000"
+                    android:text="Central Luzon"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="040000000"
+                    android:text="Southern Tagalog (CALABARZON)"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="050000000"
+                    android:text="Bicol Region"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="060000000"
+                    android:text="Western Visayas"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="070000000"
+                    android:text="Central Visayas"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="080000000"
+                    android:text="Eastern Visayas"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="090000000"
+                    android:text="Zamboanga Peninsula Region"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="100000000"
+                    android:text="Northern Mindanao"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="110000000"
+                    android:text="Davao Region"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="120000000"
+                    android:text="SOCCSKSARGEN"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="160000000"
+                    android:text="CARAGA"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="130000000"
+                    android:text="National Capital Region"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="140000000"
+                    android:text="Cordillera Administration Region"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="150000000"
+                    android:text="ARMM"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="170000000"
+                    android:text="MIMAROPA Region"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="000000000"
+                    android:text="Outside Philippines"
+                    android:textSize="@dimen/textSize" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

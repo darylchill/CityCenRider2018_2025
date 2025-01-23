@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="PLACE OF DELIVERY"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="10sp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rdGroup_dialog_O_PlaceofDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="OTHERS"
+                    android:textAlignment="gravity"
+                    android:textSize="20sp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Don't know"
+                    android:hint="99"
+                    android:textSize="@dimen/textSize"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Home"
+                    android:textAlignment="gravity"
+                    android:textSize="20sp"
+                    >
+                </TextView>
+                <RadioButton
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Your Home"
+                    android:hint="3"
+                    android:textSize="@dimen/textSize"
+                    />
+                <RadioButton
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Other Home"
+                    android:hint="4"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Public Sector"
+                    android:textAlignment="gravity"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+                <RadioButton
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Government Hospital"
+                    android:hint="5"
+                    android:textSize="@dimen/textSize"
+                    />
+                <RadioButton
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Government RHU or Health Center"
+                    android:hint="6"
+                    android:textSize="@dimen/textSize"
+                    />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp">
+                    <EditText
+                        android:id="@+id/txtViewOthers_O_Public"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Others, specify"
+                        android:textSize="@dimen/textSize"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="PRIVATE SECTOR"
+                    android:textAlignment="gravity"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+                <RadioButton
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Private Hospital"
+                    android:hint="7"
+                    android:textSize="@dimen/textSize"
+                    />
+                <RadioButton
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Private Clinic (e.g. midwife clinic)"
+                    android:hint="8"
+                    android:textSize="@dimen/textSize"
+                    />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginTop="8dp">
+                    <EditText
+                        android:id="@+id/txtViewOthers_O_Private"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Others, specify"
+                        android:textSize="@dimen/textSize"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

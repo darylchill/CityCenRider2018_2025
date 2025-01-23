@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="TYPE OF COOPERATIVE"
+        android:textAlignment="center">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="10sp"
+            android:orientation="vertical">
+
+
+
+            <RadioGroup
+                android:id="@+id/rdGroup_dialog_I_TypeofCooperation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="If No"
+                    android:textSize="20sp" />
+                <RadioButton
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Not Interested"
+                    android:hint="96"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Don't know"
+                    android:hint="99"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="If Yes"
+                    android:textSize="20sp" />
+                <RadioButton
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Credit Cooperative"
+                    android:hint="3"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Consumer Cooperative"
+                    android:hint="4"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Marketing Cooperative"
+                    android:hint="5"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Multi-purpose Cooperative"
+                    android:hint="6"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize" />
+
+
+                <RadioButton
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Producer Cooperative"
+                    android:hint="7"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Service Cooperative"
+                    android:hint="8"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginTop="8dp">
+                    <EditText
+                        android:id="@+id/txtViewOthers_I_Cooperation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Others, specify"
+                        android:textSize="@dimen/textSize"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="CREDIT FACILITY"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10sp"
+            android:layout_marginRight="10sp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rdGroup_dialog_J_CREDIT_FACILITY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="If No"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="No"
+                    android:hint="2"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize"
+                    />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="If Yes"
+                    android:textSize="20sp" />
+                <RadioButton
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="3"
+                    android:text="Relative/Friend"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="4"
+                    android:text="Employer/Landlord"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize" />
+
+                <RadioButton
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="gravity"
+                    android:text="Private money lender"
+                    android:hint="5"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="gravity"
+                    android:text="Rural Bank"
+                    android:hint="6"
+                    android:textSize="@dimen/textSize"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="gravity"
+                    android:text="Private Bank"
+                    android:hint="7"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="gravity"
+                    android:text="Cooperative"
+                    android:hint="8"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="gravity"
+                    android:text="Government Bank"
+                    android:hint="9"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="GSIS"
+                    android:hint="10"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="SSS"
+                    android:hint="11"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Pawnshop"
+                    android:hint="12"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <RadioButton
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="NGOs"
+                    android:hint="13"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Don't know"
+                    android:hint="99"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/textSize"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginTop="8dp">
+                    <EditText
+                        android:id="@+id/txtViewOthers_J_CREDIT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Others, specify"
+                        android:textSize="@dimen/textSize"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

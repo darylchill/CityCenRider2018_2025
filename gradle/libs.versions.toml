@@ -1,0 +1,48 @@
+[versions]
+agp = "8.6.1"
+androidGifDrawable = "1.2.17"
+androidPdfViewer = "2.8.2"
+constraintLayout = "2.0.4"
+constraintLayoutVersion = "1.1.3"
+fab = "1.6.4"
+firebaseCore = "16.0.7"
+firebaseDatabase = "16.0.6"
+junit = "4.13.2"
+junitJunit = "4.12"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+library = "1.0.0"
+libraryVersion = "1.0.2"
+material = "1.10.0"
+nanotasks = "1.1.0"
+playServicesAuth = "16.0.1"
+playServicesDrive = "16.0.0"
+supportV4 = "28.0.0"
+
+[libraries]
+android-gif-drawable = { module = "pl.droidsonroids.gif:android-gif-drawable", version.ref = "androidGifDrawable" }
+android-pdf-viewer = { module = "com.github.barteksc:android-pdf-viewer", version.ref = "androidPdfViewer" }
+appcompat-v7 = { module = "com.android.support:appcompat-v7", version.ref = "supportV4" }
+constraint-layout = { module = "com.android.support.constraint:constraint-layout", version.ref = "constraintLayout" }
+constraint-layout-v113 = { module = "com.android.support.constraint:constraint-layout", version.ref = "constraintLayoutVersion" }
+design = { module = "com.android.support:design", version.ref = "supportV4" }
+fab = { module = "com.github.clans:fab", version.ref = "fab" }
+firebase-core = { module = "com.google.firebase:firebase-core", version.ref = "firebaseCore" }
+firebase-database = { module = "com.google.firebase:firebase-database", version.ref = "firebaseDatabase" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+junit-v412 = { module = "junit:junit", version.ref = "junitJunit" }
+library = { module = "com.ajts.androidmads.sqliteimpex:library", version.ref = "library" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+nanotasks = { module = "com.fabiendevos:nanotasks", version.ref = "nanotasks" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+play-services-drive = { module = "com.google.android.gms:play-services-drive", version.ref = "playServicesDrive" }
+sqlite2excel-library = { module = "com.ajts.androidmads.SQLite2Excel:library", version.ref = "libraryVersion" }
+support-v4 = { module = "com.android.support:support-v4", version.ref = "supportV4" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

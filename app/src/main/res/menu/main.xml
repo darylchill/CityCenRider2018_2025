@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_sync"
+        android:orderInCategory="100"
+        android:title="Sync Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Change BarangayCode"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings_EXPORT"
+        android:orderInCategory="100"
+        android:title="Export Database"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings_IMPORT"
+        android:orderInCategory="100"
+        android:title="Import Database"
+        app:showAsAction="never" />
+</menu>

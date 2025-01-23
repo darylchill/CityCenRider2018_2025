@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HERE IS WE CAN SEE THE COLORS PALLETE WE USE
+            I JUST USE THE COLOR STYLE ACCENT OF HUAWEI P20 PRO HERE-->
+<resources>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#512DA8</color>
+    <color name="colorAccent">#E040FB</color>
+</resources>

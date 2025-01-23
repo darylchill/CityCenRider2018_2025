@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CityCen2018 Rider</string>
+    <string name="title_activity_main">gov.ph.lgu_gensan.lazer.citycen2018rider</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">City Census 2018 Rider</string>
+    <string name="nav_header_title2">Please go back to login </string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="MasterPass">LDAC_Lazer1234</string>
+
+</resources>

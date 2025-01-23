@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:paddingStart="10sp"
+                android:paddingEnd="10sp"
+                android:text="About The Developers"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifTextView
+                        android:id="@+id/gifTextView"
+                        android:layout_width="387dp"
+                        android:layout_height="278dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/rissd" />
+
+                    <pl.droidsonroids.gif.GifTextView
+                        android:id="@+id/gifTextView1"
+                        android:layout_width="387dp"
+                        android:layout_height="278dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/rissdb" />
+
+                    <pl.droidsonroids.gif.GifTextView
+                        android:id="@+id/gifTextView2"
+                        android:layout_width="278dp"
+                        android:layout_height="387dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/rissdc" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:text="Developed by:"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"></TextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:text="LGU-General Santos City \n City Planning Development Office - Research, Information System and Statistic Division"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:text="Main Programmer:"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/txtMaster_Settings"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingEnd="10sp"
+                android:text="Daryl S. Gorra \n darylgorra@gmail.com"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
