@@ -19,7 +19,8 @@ This app was one of the **official Android applications** used by **General Sant
 - **Firebase (Optional)** – Cloud synchronization support.  
 
 ## 📸 Screenshots  
-<p align="center"><a href="#" target="_blank"><img src="screenshot-2025-01-06-170544.webp.webp"  alt="sample image" class='logo' style='mix-blend-mode:multiply'></a></p>
+![CityCenRider Screenshot](https://raw.githubusercontent.com/darylchill/CityCenRider2018_2025/refs/heads/main/screenshot-2025-01-06-170544.webp)
+
 
 ## 🚀 Future Enhancements  
 🔹 Migration to **Flutter** for cross-platform support?  
