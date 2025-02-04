@@ -19,7 +19,7 @@ This app was one of the **official Android applications** used by **General Sant
 - **Firebase (Optional)** – Cloud synchronization support.  
 
 ## 📸 Screenshots  
-*(Insert images showcasing the app's UI and functionality!)*  
+<p align="center"><a href="#" target="_blank"><img src="screenshot-2025-01-06-170544.webp.webp"  alt="sample image" class='logo' style='mix-blend-mode:multiply'></a></p>
 
 ## 🚀 Future Enhancements  
 🔹 Migration to **Flutter** for cross-platform support?  
