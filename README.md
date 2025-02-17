@@ -1,6 +1,6 @@
 # CityCen Rider 📊🚀  
 
-**CityCenRider** is the **official census application** used by the **LGU General Santos City – City Planning and Development Office** for their **local census, starting from 2018**.  
+**CityCenRider** is the **official census application** alongside CBMS Application used by the **LGU General Santos City – City Planning and Development Office** for their **local census, starting from 2018**.  
 
 ## 📌 About CityCenRider  
 CityCenRider was developed as a **computerized replacement** for the paper-based census template used in **CityCen2011**. The app retains the familiar interface of the traditional paper forms but enhances usability with a **modern UI design** and digital efficiency.  
